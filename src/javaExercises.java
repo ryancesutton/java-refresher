@@ -2,14 +2,14 @@ public class javaExercises {
 
 
     //Exercise 1
-    public static Integer sum (int a, int b) {
+    public static int sum (int a, int b) {
 
         return a + b;
 
     }
 
     //Exercise 2
-    public static Integer addMultiplesOfThreeAndFive(int n){
+    public static int addMultiplesOfThreeAndFive(int n){
 
         int sum = 0;
 
@@ -25,7 +25,8 @@ public class javaExercises {
 
     }
 
-    public static Integer factorial (int n) {
+    //Exercise 3
+    public static int factorial (int n) {
 
         int product = 1;
 
@@ -40,6 +41,25 @@ public class javaExercises {
     }
 
 
+    //Exercise 4
+    public static int search(Integer n, Integer[] list) {
+
+        int index = -1;
+
+        for(int i = 0; i < list.length; i++) {
+
+            if (list[i].equals(n)){
+
+                index = i;
+                break;
+
+
+            }
+        }
+        return index;
+    }
+
+
 
 
 
@@ -50,6 +70,11 @@ public class javaExercises {
         System.out.println(sum(5, 5));
         System.out.println(addMultiplesOfThreeAndFive(15));
         System.out.println(factorial(7));
+        Integer[] list = new Integer[3];
+        list[0] = 3;
+        list[1] = 4;
+        list[2] = 5;
+        System.out.println(search(5, list));
 
     }
 
