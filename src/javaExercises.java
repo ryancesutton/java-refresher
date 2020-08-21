@@ -59,6 +59,19 @@ public class javaExercises {
         return index;
     }
 
+    //Exercise 5
+    public static String reverseString(String s) {
+
+        String newString = "";
+
+        for (int i = 0; i < s.length(); i++) {
+
+            newString += s.charAt(s.length() - i - 1);
+
+        }
+        return newString;
+    }
+
 
 
 
@@ -75,6 +88,7 @@ public class javaExercises {
         list[1] = 4;
         list[2] = 5;
         System.out.println(search(5, list));
+        System.out.println(reverseString("Very cool sentence"));
 
     }
 
