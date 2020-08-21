@@ -25,6 +25,23 @@ public class javaExercises {
 
     }
 
+    public static Integer factorial (int n) {
+
+        int product = 1;
+
+        for (int i = 1; i <= n; i++) {
+
+            product *= i;
+
+        }
+
+        return product;
+
+    }
+
+
+
+
 
 
 
@@ -32,6 +49,7 @@ public class javaExercises {
 
         System.out.println(sum(5, 5));
         System.out.println(addMultiplesOfThreeAndFive(15));
+        System.out.println(factorial(7));
 
     }
 
