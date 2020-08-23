@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class javaExercises {
 
 
@@ -86,6 +89,16 @@ public class javaExercises {
 
     }
 
+    //Exercise 7
+    public static Double average(List<Integer> list) {
+
+        return list.stream()
+                .mapToInt(i -> i)
+                .average()
+                .getAsDouble();
+
+    }
+
 
 
 
@@ -104,6 +117,11 @@ public class javaExercises {
         System.out.println(search(5, list));
         System.out.println(reverseString("Very cool sentence"));
         System.out.println(findMaximum(list));
+        List<Integer> newList = new ArrayList<>();
+        newList.add(4);
+        newList.add(5);
+        newList.add(7);
+        System.out.println(average(newList));
 
     }
 
