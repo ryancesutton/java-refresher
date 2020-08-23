@@ -72,6 +72,20 @@ public class javaExercises {
         return newString;
     }
 
+    //Exercise 6
+    public static int findMaximum(Integer[] list) {
+
+        int maximum = list[0];
+        for (int i : list) {
+            if (i > maximum) {
+                maximum = i;
+            }
+        }
+
+        return maximum;
+
+    }
+
 
 
 
@@ -89,6 +103,7 @@ public class javaExercises {
         list[2] = 5;
         System.out.println(search(5, list));
         System.out.println(reverseString("Very cool sentence"));
+        System.out.println(findMaximum(list));
 
     }
 
