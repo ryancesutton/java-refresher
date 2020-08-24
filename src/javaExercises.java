@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class javaExercises {
 
@@ -99,6 +100,15 @@ public class javaExercises {
 
     }
 
+    //Exercise 8
+    public static List<String> upperCase(List<String> list) {
+
+        return list.stream()
+                .map(String::toUpperCase)
+                .collect(Collectors.toList());
+
+    }
+
 
 
 
@@ -122,6 +132,11 @@ public class javaExercises {
         newList.add(5);
         newList.add(7);
         System.out.println(average(newList));
+        List<String> stringList = new ArrayList<>();
+        stringList.add("codeup");
+        stringList.add("java");
+        stringList.add("guitar");
+        System.out.println(upperCase(stringList));
 
     }
 
