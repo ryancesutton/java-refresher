@@ -109,6 +109,29 @@ public class javaExercises {
 
     }
 
+    //Exercise 9
+    public static String fizzBuzz(Integer i) {
+
+        String result = "";
+        if (i % 3 == 0) {
+
+            result += "Fizz";
+
+        }
+        if (i % 5 == 0) {
+
+            result += "Buzz";
+        }
+
+        if (result.equals("")){
+
+            result = i.toString();
+
+        }
+
+        return result;
+    }
+
 
 
 
@@ -137,6 +160,10 @@ public class javaExercises {
         stringList.add("java");
         stringList.add("guitar");
         System.out.println(upperCase(stringList));
+        int i = 3;
+        System.out.println(fizzBuzz(i));
+        i = 5;
+        System.out.println(fizzBuzz(i));
 
     }
 
