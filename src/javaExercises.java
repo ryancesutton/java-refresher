@@ -147,6 +147,18 @@ public class javaExercises {
 
     }
 
+//    Exercise 11
+
+    public static Integer fibonacci(Integer n) {
+        if (n == 1) {
+            return 1;
+        } else if (n == 0) {
+            return 0;
+        } else {
+            return fibonacci(n - 1) + fibonacci(n - 2);
+        }
+    }
+
 
     public static void main(String[] args) {
 
@@ -175,6 +187,7 @@ public class javaExercises {
         i = 5;
         System.out.println(fizzBuzz(i));
         System.out.println("Is prime? " + isPrime(5));
+        System.out.println(fibonacci(3));
 
     }
 
