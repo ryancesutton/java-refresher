@@ -132,10 +132,20 @@ public class javaExercises {
         return result;
     }
 
+//    Exercise 10
 
+    public static Boolean isPrime(Integer n) {
 
+        boolean isPrime = true;
+        for (int i = n - 1; i > 1; i--) {
+            if (n % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+        return isPrime;
 
-
+    }
 
 
     public static void main(String[] args) {
@@ -164,6 +174,7 @@ public class javaExercises {
         System.out.println(fizzBuzz(i));
         i = 5;
         System.out.println(fizzBuzz(i));
+        System.out.println("Is prime? " + isPrime(5));
 
     }
 
